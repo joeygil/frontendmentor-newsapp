@@ -25,6 +25,116 @@ h1 {
   grid-template-areas: "nav nav nav" "banner banner menu" "title paragraph menu" "article1 article2 article3";
 }
 
+.burger {
+  display: none;
+}
+
+@media only screen and (max-width: 500px) {
+  body {
+    max-width: 500px;
+    padding: 0;
+    margin: 5px auto;
+    width: 100%;
+  }
+  .container {
+    /* grid-template-columns: 1fr;
+   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr; */
+    display: flex;
+    flex-direction: column;
+  }
+
+  nav {
+    order: 1;
+  }
+
+  .logo {
+    margin: 10px;
+  }
+
+  .burger {
+    display: block;
+    margin-right: 20px;
+  }
+
+  .banner {
+    order: 2;
+    height: 300px;
+  }
+
+  .banner img {
+    object-fit: cover;
+    height: 100%;
+  }
+
+  .title {
+    order: 3;
+    padding: 0;
+    margin: 0 10px;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  .paragraph {
+    order: 4;
+    margin-top: 0;
+  }
+
+  nav li {
+    display: none;
+  }
+
+  .article1,
+  .article2,
+  .article3 {
+    margin: 10px;
+  }
+
+  .title {
+    margin: 0 10px;
+  }
+
+  .paragraph {
+    margin: 0 10px;
+  }
+
+  .menu {
+    margin: 0;
+    padding: 10px !important;
+    padding-bottom: 30px !important;
+    order: 5;
+  }
+
+  .menu h2 {
+    margin-top: 5px !important;
+  }
+
+  button {
+    margin: 10px 0 20px 0 !important;
+  }
+
+  .article1 {
+    order: 6;
+    margin-top: 20px;
+  }
+
+  .article2 {
+    order: 7;
+  }
+
+  .article3 {
+    order: 8;
+  }
+  .menu h2 {
+    margin: 0;
+  }
+
+  hr {
+    margin: 0;
+  }
+}
+
 nav {
   grid-area: nav;
   margin-bottom: 15px;
