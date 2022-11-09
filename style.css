@@ -1,22 +1,22 @@
 @font-face {
   font-family: "Inter";
-  src: url(/assets/fonts/static/Inter-Regular.ttf) format(woff);
+  src: url(assets/fonts/static/Inter-Regular.ttf) format(woff);
 }
 
 @font-face {
   font-family: "Inter Bold";
-  src: url(/assets/fonts/static/Inter-Bold.ttf) format(woff);
+  src: url(assets/fonts/static/Inter-Bold.ttf) format(woff);
 }
 
 @font-face {
   font-family: "Inter Extra Bold";
-  src: url(/assets/fonts/static/Inter-ExtraBold.ttf) format(woff);
+  src: url(assets/fonts/static/Inter-ExtraBold.ttf) format(woff);
 }
 
 body {
   padding: 0;
   box-sizing: border-box;
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   color: hsl(240, 100%, 5%);
   max-width: 1440px;
   width: 80%;
@@ -24,7 +24,7 @@ body {
 }
 
 h1 {
-  font-family: "Inter Extra Bold";
+  font-family: "Inter Extra Bold", sans-serif;
   font-size: 3.5rem;
   line-height: 0.9;
   padding: 0;
@@ -82,13 +82,13 @@ li:hover {
 
 .menu h2 {
   color: hsl(35, 77%, 62%);
-  font-family: "Inter Bold";
+  font-family: "Inter Bold", sans-serif;
   font-size: 2.5rem;
   margin: 40px 0 20px 0;
 }
 
 .menu h3 {
-  font-family: "Inter Bold";
+  font-family: "Inter Bold", sans-serif;
   font-size: 1.4rem;
   transition: 0.3s;
   margin: 5px 0;
