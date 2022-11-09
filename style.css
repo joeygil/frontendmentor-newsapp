@@ -1,0 +1,206 @@
+@font-face {
+  font-family: "Inter";
+  src: url(/assets/fonts/static/Inter-Regular.ttf) format(woff);
+}
+
+@font-face {
+  font-family: "Inter Bold";
+  src: url(/assets/fonts/static/Inter-Bold.ttf) format(woff);
+}
+
+@font-face {
+  font-family: "Inter Extra Bold";
+  src: url(/assets/fonts/static/Inter-ExtraBold.ttf) format(woff);
+}
+
+body {
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter";
+  color: hsl(240, 100%, 5%);
+  max-width: 1440px;
+  width: 80%;
+  margin: auto auto;
+}
+
+h1 {
+  font-family: "Inter Extra Bold";
+  font-size: 3.5rem;
+  line-height: 0.9;
+  padding: 0;
+}
+
+.container {
+  display: grid;
+  height: 100%;
+  width: 100%;
+  gap: 10px 20px;
+  padding: 10px 0;
+  grid-template-areas: "nav nav nav" "banner banner menu" "title paragraph menu" "article1 article2 article3";
+}
+
+nav {
+  grid-area: nav;
+  margin-bottom: 15px;
+}
+
+.nav-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+li {
+  display: inline;
+  margin: 0 20px;
+  transition: 0.3s;
+}
+
+li:hover {
+  color: hsl(5, 85%, 63%);
+  cursor: pointer;
+}
+
+.banner {
+  grid-area: banner;
+}
+
+.banner img {
+  width: 100%;
+}
+
+.menu {
+  grid-area: menu;
+  padding: 5px 30px;
+  background-color: hsl(240, 100%, 5%);
+  color: white;
+  line-height: 1.5;
+  font-size: 0.8rem;
+  height: 100%;
+}
+
+.menu h2 {
+  color: hsl(35, 77%, 62%);
+  font-family: "Inter Bold";
+  font-size: 2.5rem;
+  margin: 40px 0 20px 0;
+}
+
+.menu h3 {
+  font-family: "Inter Bold";
+  font-size: 1.4rem;
+  transition: 0.3s;
+  margin: 5px 0;
+}
+
+.menu h3:hover {
+  color: hsl(35, 77%, 62%);
+  cursor: pointer;
+}
+
+.menu p {
+  color: hsl(233, 8%, 79%);
+  font-size: 1rem;
+  padding: 0;
+  margin: 0;
+  line-height: 1.7;
+}
+
+hr {
+  margin: 25px 0;
+  border-color: hsl(236, 13%, 42%);
+}
+
+.title {
+  grid-area: title;
+}
+
+.paragraph {
+  grid-area: paragraph;
+  line-height: 1.5;
+  /* padding: 0 10px 10px; */
+  color: hsl(236, 13%, 42%);
+}
+
+.article1 {
+  grid-area: article1;
+  display: grid;
+  margin-top: 25px;
+  padding: 0 0 20px;
+  grid-template-areas:
+    "img headline headline"
+    "img subhead subhead"
+    "img para para";
+}
+.article2 {
+  display: grid;
+  margin-top: 25px;
+  grid-area: article2;
+  padding: 0 0 20px;
+  grid-template-areas:
+    "img headline headline" "img subhead subhead"
+    "img para para";
+}
+
+.article3 {
+  display: grid;
+  margin-top: 25px;
+  grid-area: article3;
+  padding: 0 0 20px;
+  grid-template-areas:
+    "img headline headline"
+    "img subhead subhead"
+    "img para para";
+}
+
+.img {
+  grid-area: img;
+  width: 100px;
+}
+
+.article-head {
+  grid-area: headline;
+  font-size: 2rem;
+  color: hsl(233, 8%, 79%);
+  font-family: "Inter Extra Bold";
+  margin: 0 20px;
+  padding: 0;
+}
+
+.article-sub {
+  grid-area: subhead;
+  font-family: "Inter Bold";
+  margin-top: 0;
+  margin: 0 20px;
+  padding: 0;
+  transition: 0.3s;
+  font-size: 1.2rem;
+}
+
+.article-sub:hover {
+  color: hsl(5, 85%, 63%);
+  cursor: pointer;
+}
+
+.article-para {
+  grid-area: para;
+  color: hsl(236, 13%, 42%);
+  margin: 0 20px;
+  padding: 0;
+}
+
+button {
+  background-color: hsl(5, 85%, 63%);
+  padding: 15px 30px;
+  border: none;
+  letter-spacing: 0.2rem;
+  color: white;
+  margin: 50px 0 0 0;
+  transition: 0.5s;
+}
+
+button:hover {
+  background-color: hsl(240, 100%, 5%);
+  cursor: pointer;
+}
